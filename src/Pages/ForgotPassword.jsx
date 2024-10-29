@@ -12,7 +12,7 @@ const ForgotPassword = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         await axios
-          .post("http://localhost:5000/api/auth/forgot-password", {email})
+          .post("https://fsd-auth-backend-ejk8.onrender.com/api/auth/forgot-password", {email})
           .then((res) => {
             toast.success(res.data.message);
            navigate("/login")

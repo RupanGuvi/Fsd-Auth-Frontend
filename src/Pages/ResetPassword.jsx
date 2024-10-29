@@ -13,7 +13,7 @@ const ResetPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios
-      .post(`http://localhost:5000/api/auth/reset-password/${id}/${token}`, {
+      .post(`https://fsd-auth-backend-ejk8.onrender.com/api/auth/reset-password/${id}/${token}`, {
         password,
       })
       .then((res) => {
